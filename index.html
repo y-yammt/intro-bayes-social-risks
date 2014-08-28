@@ -583,12 +583,13 @@ URL: https://code.google.com/p/io-2012-slides
           $w^{(k+1)} = \frac{w^{(k)} p_{11}}{w^{(k)} p_{11} + (1 - w^{(k)}) p_{21}} = \frac{1}{1 + \frac{1-w^{(k)}}{w^{(k)}} \exp(- \log \frac{p_{11}}{p_{21}}) }$
           </div>
           <div class="large-spacer">
-          また、$\frac{1-w^{(k)}}{w^{(k)}} = \frac{1 - \frac{1}{1 + b \exp(- L_n)}}{\frac{1}{1 + b \exp(-L_n)}} = b \exp(-L_n)$
+          また、$\frac{1-w^{(k)}}{w^{(k)}} = \frac{1 - \frac{1}{1 + b \exp(- L_k)}}{\frac{1}{1 + b \exp(-L_k)}} = b \exp(-L_k)$
           </div>
           <div class="large-spacer">
-          したがって、$w^{(k+1)} = \frac{1}{1 + b \exp(- (\underbrace{L_n + \log \frac{p_{11}}{p_{21}}}_{= L_{n+1}}))}$
+          したがって、$w^{(k+1)} = \frac{1}{1 + b \exp(- (\underbrace{L_k + \log \frac{p_{11}}{p_{21}}}_{= L_{k+1}}))}$
           </div>
-          <li>$z_2$のときも$z_1$と同様に示すことができるため省略する。以上より、式(3.3.5)〜式(3.3.7)が成立することが証明された。
+          <li>$z_2$のときも$z_1$と同様に示すことができるため省略する。</li>
+          <li>以上より、式(3.3.5)〜式(3.3.7)が成立することが証明された。
         </ul>
       </ul>
     </article>
